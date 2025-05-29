@@ -1,0 +1,37 @@
+body {
+  background-color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 24px auto;
+}
+
+.gallery {
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  margin: 24px;
+  max-width: calc(3 * 360px + 2 * 24px);
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  display: block;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+  transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
